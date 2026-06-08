@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Aegis Striker</title>
+    <style>
+        :root {
+            --bg-color: #0c081e;
+            --container-bg: #14102c;
+            --text-primary: #f0ecfa;
+            --text-secondary: #c0bacc;
+            --accent-cyan: #00ffff;
+            --accent-pink: #ff007f;
+            --accent-purple: #bd00ff;
+            --border-color: #2b254a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-pink) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background-color: rgba(189, 0, 255, 0.15);
+            color: #d88eff;
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 15px;
+            border: 1px solid rgba(189, 0, 255, 0.3);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-cyan);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-pink);
+            padding-left: 15px;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(255, 0, 127, 0.05) 100%);
+            border: 1px dashed var(--accent-cyan);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 40px;
+        }
+
+        .contact-card p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-pink);
+            text-shadow: 0 0 8px rgba(255, 0, 127, 0.5);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--border-color), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>AEGIS STRIKER</h1>
+        <div class="subtitle">Official Privacy Policy</div>
+        <div class="last-updated">Last Updated: June 8, 2026</div>
+    </div>
+
+    <p>Welcome to <strong>Aegis Striker</strong> (referred to below as "the App"), a futuristic 2D neon space shooter game. We respect your privacy and are committed to protecting any information that may be gathered during your use of the App.</p>
+
+    <p>This Privacy Policy explains what information we collect, how we use it, and your choices regarding this information.</p>
+
+    <hr>
+
+    <h2>1. Information We Collect and Receive</h2>
+    
+    <h3>A. Personal Information</h3>
+    <p>We do <strong>not</strong> collect any personally identifiable information (PII) such as your name, physical address, phone number, or payment details. The App is designed to function with zero requirement for personal registration or user accounts.</p>
+
+    <h3>B. Automatically Collected Data & Network Information</h3>
+    <ul>
+        <li><strong>Network Status & Connectivity:</strong> Because Aegis Striker is an <strong>Online-Only</strong> game, the App monitors your network state (Wi-Fi, Cellular, or Ethernet) to ensure an active link to our servers.</li>
+        <li><strong>Game Performance & State Data:</strong> The App utilizes a local SQLite database (via Android Room) on your device to keep track of local game statistics, campaign scores, and high-score leaderboards. This data remains on your physical device and is not uploaded to external servers.</li>
+    </ul>
+
+    <h3>C. Third-Party API Integrations</h3>
+    <p>Aegis Striker integrates with the <strong>Google Gemini API</strong> to provide dynamic, AI-assisted tactical advice, game analysis, and fluid difficulty adjustments during gameplay.</p>
+    <ul>
+        <li>When the App requests AI advice, gameplay state markers (such as current score, wave reached, target accuracy, and damage indicators) are transmitted securely to the Gemini API servers.</li>
+        <li>No personal, identifying, or device-specific sensitive data is sent to the Gemini API.</li>
+        <li>For more information on how Google manages query data, please refer to the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>2. Permissions Required by the App</h2>
+    <p>To provide a fully synchronized online gameplay experience, the App requests the following Android system permissions:</p>
+    <ul>
+        <li><code>android.permission.INTERNET</code>: Required to verify network connectivity and transmit high-energy tactical analysis queries to the secure Google Gemini API.</li>
+        <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Required to monitor active network connections and gracefully lock/unlock play options based on internet availability.</li>
+    </ul>
+
+    <h2>3. How We Use the Collected Data</h2>
+    <p>Any info collected or processed by the App is strictly used to:</p>
+    <ol>
+        <li>Maintain real-time gaming synchronization and gameplay stability.</li>
+        <li>Deliver responsive tactical dialogue, difficulty tailoring, and gameplay logs using deep-learning models.</li>
+        <li>Save local achievements, score counters, and unlockable status indicators on your device.</li>
+    </ol>
+
+    <h2>4. Data Sharing and Disclosure</h2>
+    <p>We <strong>do not sell, trade, or rent</strong> any data to third-party advertisers, data brokers, or marketing networks. We only share technical gameplay telemetry with:</p>
+    <ul>
+        <li><strong>Google (Gemini API):</strong> Solely for executing real-time in-game generative dialogue and difficulty updates.</li>
+    </ul>
+    <p>We may also disclose data if required to do so by applicable law, in response to a valid legal subpoena, or to protect the safety and integrity of our systems.</p>
+
+    <h2>5. Security of Your Data</h2>
+    <p>We implement industry-standard commercial security measures to protect device telemetry. Since your high scores and progress are preserved within a secure local SQLite sandboxed directory, they are protected by standard Android operating system-level application boundary controls.</p>
+
+    <h2>6. Children's Privacy (COPPA & GDPR Compliance)</h2>
+    <p>Aegis Striker is a general-audience space shooter. We do not knowingly compile or request data from children under the age of 13 (or under the age of 16 in the European Union). If you are a parent or guardian and believe that your child has provided us with any data, please contact us immediately so we can inspect and safely purge any records.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may modify or update this Privacy Policy from time to time. We will post any amendments directly on this page and revise the "Last Updated" date at the top. We encourage you to review this policy periodically to stay informed about how we maintain data security.</p>
+
+    <div class="contact-card">
+        <h3>8. Contact Us</h3>
+        <p>If you have any questions, comments, or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+        <p style="margin-top: 15px;"><strong>Developer Email:</strong> <a href="mailto:sajai.whitenut@gmail.com">sajai.whitenut@gmail.com</a></p>
+        <p><strong>Project Support:</strong> Aegis Striker / Space Shooter Campaign</p>
+    </div>
+</div>
+
+</body>
+</html>
